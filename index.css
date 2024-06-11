@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+/*  font-family: "Albert Sans", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Albert Sans", sans-serif;
+}
+
+/***** header *****/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+
+    font-size: 0.8rem;
+
+    position: fixed;
+    width: 100%;
+}
+header img {
+    width: 100px;
+}
+header .nav_menu p {
+    margin: 0;
+}
+header .nav_menu ul li {
+    display: inline;
+}
+
+header .search-box .search-txt {
+    border-radius: 25px;
+    height: 30px;
+    border: 1px solid #222;
+}
+header .search-box input::placeholder {
+    padding-left: 15px;
+}
+header .nav-login a:last-child{
+    background-color: #D9D9D9;
+    padding: 0 0.5rem;
+}
+
+/***** section1 *****/
+.section {
+    height: 100vh;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+}
+.main .main-text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 8rem;
+}
+.main .main-text .text-top {
+    position: absolute;
+    top: 8rem; left: 1rem;
+    transition: 0.3s;
+}   
+.main .main-text .text-bottom {
+    position: absolute;
+    bottom: 5rem; right: 1rem;
+}
+.main .main-des {
+    position: absolute;
+    bottom: 5rem; left: 1rem;
+}
+.portfolio_slide_wrap {
+    display: flex;
+    transition: all 1s 2s;
+
+    position: absolute;
+    top: 55%; transform: translateY(-55%);
+    left: 1rem;
+    }
+.portfolio_slide_wrap a{
+    width: 30rem; height: 18rem;
+    margin-right: 10rem;
+    display: flex;
+}
+.portfolio_slide_wrap .slide1 {
+    background: url(./images/scroll1.jpg) no-repeat center center / cover;
+}
+.portfolio_slide_wrap .slide2 {
+    background: url(./images/scroll2.jpg) no-repeat center center / cover;
+}
+.portfolio_slide_wrap .slide3 {
+    background: url(./images/scroll3.jpg) no-repeat center center / cover;
+}
+.portfolio_slide_wrap .slide4 {
+    background: url(./images/scroll4.jpg) no-repeat center center / cover;
+}
+.portfolio_slide_wrap .slide5 {
+    background: url(./images/scroll5.jpg) no-repeat center center / cover;
+}
+
+/***** section2 *****/
+.brand-des {
+    padding-top: 30rem;
+    text-align: center;
+    transition: all 0.5s;
+}
+.brand-des p {
+    font-size: 1rem;
+    line-height: 1.3;
+    font-weight: 300;
+}
+.brand-des .brand-des-big {
+    padding-top: 7rem;
+    font-size: clamp(5rem,4.792vw,9.2rem);  
+}
+.brand-des .brand-des-big .brand-des-banner {
+    animation: marquee 30s linear infinite;
+}
+.brand-des .brand-des-big .brand-des-banner p {
+    font-size: clamp(5rem,4.792vw,9.2rem);
+    white-space: nowrap;
+}
+
+/***** section3(video) *****/
+.video {
+    transform: translate3d(0px, -9px, 0px);
+    padding-top: 10%;
+}
+.video iframe {
+    width: 100%;
+    height: 100%;
+}
