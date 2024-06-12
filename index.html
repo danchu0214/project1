@@ -2,129 +2,207 @@
 <html lang="kr">
 
 <head>
-    <meta charset="utf-8">
-    <title>MAISON MARGIELA</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <!-- og -->
-    <meta property="og:title" content="Portfolio">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-    <meta property="og:description" content="MAISON MARGIELA">
-    <meta property="og:type" content="website">
-    <!-- reset css -->
-    <link rel="stylesheet" href="./assets/styles/reset.css">
-    <!-- 외부 css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <!-- 작성한 css -->
-    <link rel="stylesheet" href="./index.css">
-    <!-- jQuery -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- 작성한 js -->
-    <script src="./index.js"></script>
+  <meta charset="utf-8">
+  <title>MAISON MARGIELA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <!-- og -->
+  <meta property="og:title" content="Portfolio">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="MAISON MARGIELA">
+  <meta property="og:type" content="website">
+  <!-- reset css -->
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <!-- 외부 css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <!-- 작성한 css -->
+  <link rel="stylesheet" href="./index.css">
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./assets/js/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="./assets/js/ScrollTrigger.min.js"></script>
+  <!-- 작성한 js -->
+  <script src="./index.js"></script>
 </head>
 
 <body>
-    <header>
-        <a href="#"><img src="./images/logo.png" alt="logo"></a>
-        <div class="nav_menu">
-            <p>MENU</p>
-            <ul>
-                <li>백</li>
-                <li>탑</li>
-                <li>슈즈</li>
-                <li>진&팬츠</li>
-                <li>SLG</li>
-            </ul>
+  <header>
+    <a href="#"><img src="./images/logo.png" alt="logo"></a>
+    <div class="nav-menu">
+      <p>MENU</p>
+      <ul>
+        <li>백</li>
+        <li>탑</li>
+        <li>슈즈</li>
+        <li>진&팬츠</li>
+        <li>SLG</li>
+      </ul>
+    </div>
+    <form class="search-box">
+      <input class="search-txt" type="text" name="" placeholder="SEARCH">
+    </form>
+    <div class="nav-login">
+      <a href="#">LOGIN</a>
+      <a href="#">CART</a>
+      <a href="#">0</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section main">
+      <div class="main-text">
+        <p class="text-top">MAISON MARGIELA</p>
+        <p class="text-bottom">PARIS</p>
+      </div>
+      <div class="main-des">
+        <p>deconstructive<br>
+          and avant-garde designs<br>
+          with unconventional materials</p>
+      </div>
+      <div class="portfolio-slide-wrap">
+        <div class="slide-wrap"><a href="#" class="slide1"></a></div>
+        <div class="slide-wrap"><a href="#" class="slide2"></a></div>
+        <div class="slide-wrap"><a href="#" class="slide3"></a></div>
+        <div class="slide-wrap"><a href="#" class="slide4"></a></div>
+        <div class="slide-wrap"><a href="#" class="slide5"></a></div>
+      </div>
+    </section>
+
+    <section class="section brand-des">
+      <p>Maison Margiela는<br>
+        Martin Margiela와 Jenny Meirens가<br>
+        1988년에 설립한 프랑스 럭셔리 패션 하우스입니다</p>
+      <div class="brand-des-big">
+        <a href="#">avantgardists</a>
+        <div class="brand-des-banner">
+          <p>anonymity and essence anonymity and essence anonymity and essence anonymity and essence anonymity
+            and essence</p>
         </div>
-        <form class="search-box">
-            <input class="search-txt" type="text" name="" placeholder="SEARCH">
-        </form>
-        <div class="nav-login">
-            <a href="#">LOGIN</a>
-            <a href="#">CART</a>
-            <a href="#">0</a>
+      </div>
+    </section>
+
+    <section class="section video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DgMJq67ZOwE?si=VyM_FyXK2o3kabDw"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section class="section category">
+      <div class="category-des">
+        <span>absence equals presence</span>
+        <p>매 시즌 전통적인<br>
+          패션 원칙에 도전하는<br>
+          아방가르드 디자인을 전개합니다</p>
+      </div>
+      <div class="category-main">
+        <a href="#" class="category-main-a1">
+          <div>
+            <p>FEATURED</p>
+          </div>
+          <div class="category-kr">
+            <p>하이라이트</p>
+          </div>
+        </a>
+        <a href="#" class="category-main-a2">
+          <div class="category-kr">
+            <p>레디투웨어</p>
+          </div>
+          <div>
+            <p>READY-TO-WEAR</p>
+          </div>
+        </a>
+        <a href="#" class="category-main-a3">
+          <div>
+            <p>ACCESSORIES</p>
+          </div>
+          <div class="category-kr">
+            <p>악세서리</p>
+          </div>
+        </a>
+        <a href="#" class="category-main-a4">
+          <div>
+            <p>SHOSE</p>
+          </div>
+          <div class="category-kr">
+            <p>신발</p>
+          </div>
+        </a>
+        <a href="#" class="category-main-a5">
+          <div>
+            <p>BAGS</p>
+          </div>
+          <div class="category-kr">
+            <p>가방</p>
+          </div>
+        </a>
+        <a href="#" class="category-main-a6">
+          <div class="category-kr">
+            <p>향수</p>
+          </div>
+          <div>
+            <p>FRAGRANCES</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section pic">
+      <div class="pic-text">
+        <p>NEW ARRIVAL</p>
+        <p>NEW ARRIVAL</p>
+      </div>
+      <div class="pic-wrap">
+        <div class="pic-pic">
+          <a href="#"><img src="./images/NEWARR1.jpg" alt="pic1"></a>
+          <a href="#"><img src="./images/NEWARR2.jpg" alt="pic2"></a>
         </div>
-    </header>
+        <div class="pic-pic">
+          <a href="#"><img src="./images/NEWARR3.jpg" alt="pic3"></a>
+          <a href="#"><img src="./images/NEWARR4.jpg" alt="pic4"></a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <main>
-        <section class="section main">
-            <div class="main-text">
-                <p class="text-top">MAISON MARGIELA</p>
-                <p class="text-bottom">PARIS</p>
-            </div>
-            <div class="main-des">
-                <p>deconstructive<br>
-                    and avant-garde designs<br>
-                    with unconventional materials</p>
-            </div>
-            <div class="portfolio_slide_wrap">
-                <a href="#" class="slide1"></a>
-                <a href="#" class="slide2"></a>
-                <a href="#" class="slide3"></a>
-                <a href="#" class="slide4"></a>
-                <a href="#" class="slide5"></a>
-            </div>
-        </section>
-
-        <section class="section brand-des">
-            <p>Maison Margiela는<br>
-                Martin Margiela와 Jenny Meirens가<br>
-                1988년에 설립한 프랑스 럭셔리 패션 하우스입니다</p>
-            <div class="brand-des-big">
-                <a href="#">avantgardists</a>
-                <div class="brand-des-banner">
-                    <p>anonymity and essence anonymity and essence anonymity and essence anonymity and essence anonymity
-                        and essence</p>
-                </div>
-            </div>
-        </section>
-        
-        <section class="section video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/DgMJq67ZOwE?si=VyM_FyXK2o3kabDw"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
-
-        <section class="section category">
-            <div>
-                <span>absence equals presence</span>
-                <p>매 시즌 전통적인<br> 
-                    패션 원칙에 도전하는<br> 
-                    아방가르드 디자인을 전개합니다</p>
-            </div>
-            <div>
-                <a href="#">
-                    <div><p>FEATURED</p></div>
-                    <div><p>하이라이트</p></div>
-                </a>
-                <a href="#">
-                    <div><p>READY-TO-WEAR</p></div>
-                    <div><p>레디투웨어</p></div>
-                </a>
-                <a href="#">
-                    <div><p>ACCESSORIES</p></div>
-                    <div><p>악세서리</p></div>
-                </a>
-                <a href="#">
-                    <div><p>SHOSE</p></div>
-                    <div><p>신발</p></div>
-                </a>
-                <a href="#">
-                    <div><p>BAGS</p></div>
-                    <div><p>가방</p></div>
-                </a>
-                <a href="#">
-                    <div><p>FRAGRANCES</p></div>
-                    <div><p>향수</p></div>
-                </a>
-            </div>
-        </section>
-
-        <section class="section pic"></section>
-    </main>
+  <footer>
+    <section class="section footer">
+      <div class="footer-big">
+        <p>CUSTOMER CARE</p>
+        <h2>+852 31078061</h2>
+        <h2>M - F 9:00 - 18:00</h2>
+      </div>
+      <div class="footer-left">
+        <ul>
+          <li>FAQs</li>
+          <li>Packaging</li>
+          <li>Return form</li>
+          <li>Shipping</li>
+          <li>Boutiques</li>
+        </ul>
+        <ul class="footer-center">
+          <li>Terms</li>
+          <li>Privacy</li>
+          <li>Accessibility Statement</li>
+        </ul>
+        <div class="footer-right">
+          <a href="#"><img src="./images/logo.png" alt="logo"></a>
+          <p>Maison Margiela is part of OTB<br>
+            Maison Margiela supports the OTB Foundation</p>
+        </div>
+      </div>
+      <div class="footer-follow">
+        <ul>
+          <li>YOUTUBE</li>
+          <li>INSTAGRAM</li>
+          <li>WECHAT</li>
+        </ul>
+      </div>
+    </section>
+  </footer>
 </body>
 
 </html>
