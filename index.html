@@ -15,17 +15,13 @@
   <meta property="og:type" content="website">
   <!-- reset css -->
   <link rel="stylesheet" href="./assets/styles/reset.css">
-  <!-- 외부 css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <!-- 작성한 css -->
-  <link rel="stylesheet" href="./index.css">
-  <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="./assets/js/jquery-3.7.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-  <script src="./assets/js/ScrollTrigger.min.js"></script>
-  <!-- 작성한 js -->
-  <script src="./index.js"></script>
+<!-- 외부 CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<!-- 작성한 CSS -->
+<link rel="stylesheet" href="./index.css">
+
 </head>
 
 <body>
@@ -51,7 +47,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main_wrap">
     <section class="section main">
       <div class="main-text">
         <p class="text-top">MAISON MARGIELA</p>
@@ -63,11 +59,15 @@
           with unconventional materials</p>
       </div>
       <div class="portfolio-slide-wrap">
-        <div class="slide-wrap"><a href="#" class="slide1"></a></div>
-        <div class="slide-wrap"><a href="#" class="slide2"></a></div>
-        <div class="slide-wrap"><a href="#" class="slide3"></a></div>
-        <div class="slide-wrap"><a href="#" class="slide4"></a></div>
-        <div class="slide-wrap"><a href="#" class="slide5"></a></div>
+        <div class="portfolio-slide-container swiper-container">
+          <div class="animation-wrap swiper-wrapper">
+            <div class="slide-wrap swiper-slide"><a href="#" class="slide1"></a></div>
+            <div class="slide-wrap swiper-slide"><a href="#" class="slide2"></a></div>
+            <div class="slide-wrap swiper-slide"><a href="#" class="slide3"></a></div>
+            <div class="slide-wrap swiper-slide"><a href="#" class="slide4"></a></div>
+            <div class="slide-wrap swiper-slide"><a href="#" class="slide5"></a></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -84,11 +84,13 @@
       </div>
     </section>
 
-    <section class="section video">
+    <section class="section video parallax">
+      <div class="video-bg">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/DgMJq67ZOwE?si=VyM_FyXK2o3kabDw"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
     </section>
 
     <section class="section category">
@@ -98,9 +100,10 @@
           패션 원칙에 도전하는<br>
           아방가르드 디자인을 전개합니다</p>
       </div>
-      <div class="category-main">
+      <div class="category-main" data-aos="fade-up"
+      data-aos-duration="2500">
         <a href="#" class="category-main-a1">
-          <div>
+          <div class="main-a">
             <p>FEATURED</p>
           </div>
           <div class="category-kr">
@@ -111,12 +114,12 @@
           <div class="category-kr">
             <p>레디투웨어</p>
           </div>
-          <div>
+          <div class="main-a">
             <p>READY-TO-WEAR</p>
           </div>
         </a>
         <a href="#" class="category-main-a3">
-          <div>
+          <div class="main-a">
             <p>ACCESSORIES</p>
           </div>
           <div class="category-kr">
@@ -124,7 +127,7 @@
           </div>
         </a>
         <a href="#" class="category-main-a4">
-          <div>
+          <div class="main-a">
             <p>SHOSE</p>
           </div>
           <div class="category-kr">
@@ -132,7 +135,7 @@
           </div>
         </a>
         <a href="#" class="category-main-a5">
-          <div>
+          <div class="main-a">
             <p>BAGS</p>
           </div>
           <div class="category-kr">
@@ -143,7 +146,7 @@
           <div class="category-kr">
             <p>향수</p>
           </div>
-          <div>
+          <div class="main-a">
             <p>FRAGRANCES</p>
           </div>
         </a>
@@ -156,13 +159,15 @@
         <p>NEW ARRIVAL</p>
       </div>
       <div class="pic-wrap">
-        <div class="pic-pic">
+        <div class="pic-pic" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2500">
           <a href="#"><img src="./images/NEWARR1.jpg" alt="pic1"></a>
-          <a href="#"><img src="./images/NEWARR2.jpg" alt="pic2"></a>
+          <a href="#" class="pic-down"><img src="./images/NEWARR2.jpg" alt="pic2"></a>
         </div>
-        <div class="pic-pic">
+        <div class="pic-pic" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="2500">
           <a href="#"><img src="./images/NEWARR3.jpg" alt="pic3"></a>
-          <a href="#"><img src="./images/NEWARR4.jpg" alt="pic4"></a>
+          <a href="#" class="pic-down"><img src="./images/NEWARR4.jpg" alt="pic4"></a>
         </div>
       </div>
     </section>
@@ -175,34 +180,47 @@
         <h2>+852 31078061</h2>
         <h2>M - F 9:00 - 18:00</h2>
       </div>
-      <div class="footer-left">
-        <ul>
-          <li>FAQs</li>
-          <li>Packaging</li>
-          <li>Return form</li>
-          <li>Shipping</li>
-          <li>Boutiques</li>
-        </ul>
+      <div class="footer-wrap">
+        <div class="footer-left">
+          <ul>
+            <li>FAQs</li>
+            <li>Packaging</li>
+            <li>Return form</li>
+            <li>Shipping</li>
+            <li>Boutiques</li>
+          </ul>
+        </div>
         <ul class="footer-center">
           <li>Terms</li>
           <li>Privacy</li>
           <li>Accessibility Statement</li>
         </ul>
-        <div class="footer-right">
-          <a href="#"><img src="./images/logo.png" alt="logo"></a>
-          <p>Maison Margiela is part of OTB<br>
-            Maison Margiela supports the OTB Foundation</p>
+        <div class="footer-right-wrap">
+          <div class="footer-right">
+            <a href="#"><img src="./images/logo.png" alt="logo"></a>
+            <p>Maison Margiela is part of OTB<br>
+              Maison Margiela supports the OTB Foundation</p>
+          </div>
+          <div class="footer-follow">
+            <ul>
+              <li>YOUTUBE</li>
+              <li>INSTAGRAM</li>
+              <li>WECHAT</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="footer-follow">
-        <ul>
-          <li>YOUTUBE</li>
-          <li>INSTAGRAM</li>
-          <li>WECHAT</li>
-        </ul>
       </div>
     </section>
   </footer>
+
+  <!-- js -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/js/gsap.min.js"></script>
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="./assets/js/ScrollTrigger.min.js"></script>
+<!-- 작성한 js -->
+<script src="./index.js"></script>
 </body>
 
 </html>
