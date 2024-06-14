@@ -1,3 +1,5 @@
+
+
 //  헤더 배경 블러
 $(document).ready(function() {
   $(window).scroll(function() {
@@ -9,11 +11,32 @@ $(document).ready(function() {
   });
 });
 
+  // 스크롤이 내려가면 헤더가 사라지고, 스크롤이 올라가면 헤더가 내려옴
+    // addEventListener('scroll', () => {})
 
+    // 브라우저를 열면 바로 읽음. 보통은 0
+    let prevScroll = window.scrollY;
+    console.log('prevScroll ', prevScroll);
 
+    $(window).on('scroll', () => {
+      // 스크롤을 하면, scrollY의 값 반환
+      let currentScroll = window.scrollY;
+      console.log('currentScroll ', currentScroll);
 
+      if(prevScroll > currentScroll) {// 스크롤을 올리면 헤더가 보임
+        // $('header').show();
+        // $('header').slideDown();
+        $('header').css({ top: 0 });
+      } else {// 스크롤을 내리면 헤더가 숨김
+        // $('header').hide();
+        // $('header').slideUp();
+        $('header').css({ top: -80 });
+      }
 
-
+      // prev에 현재 스크롤 값 재할당
+      prevScroll = currentScroll;
+      console.log('재할당 된 prevScroll ', prevScroll);
+    })
 
 // 가로스크롤
 

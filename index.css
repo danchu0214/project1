@@ -2,7 +2,6 @@
 
 /*  font-family: "Albert Sans", sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
 body {
     font-family: "Albert Sans", sans-serif;
     overflow-x: hidden; overflow-y: auto;
@@ -17,9 +16,6 @@ body {
 }
 
 /***** header *****/
-.blur {
-    backdrop-filter: blur(3px);
-  }
   
 header {
     display: flex;
@@ -35,7 +31,7 @@ header {
 
     color: rgb(43, 43, 43);
 
-    backdrop-filter: blur(3px);
+    transition: 0.5s;
 }
 
 header img {
@@ -54,9 +50,6 @@ header .search-box .search-txt {
     border-radius: 25px;
     height: 30px;
     border: 1px solid #222;
-}
-
-header .search-box input::placeholder {
     padding-left: 15px;
 }
 
@@ -87,7 +80,6 @@ header .nav-login a:last-child {
 
     font-size: 8rem;
 }
-
 .main .main-text .text-top {
     position: absolute;
     top: 8rem;
@@ -282,6 +274,8 @@ header .nav-login a:last-child {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+
+    transition: 0.3s;
 }
 
 .category .category-main .category-kr {
