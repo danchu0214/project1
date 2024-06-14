@@ -5,6 +5,7 @@
 
 body {
     font-family: "Albert Sans", sans-serif;
+    overflow-x: hidden; overflow-y: auto;
 }
 
 .section {
@@ -16,6 +17,10 @@ body {
 }
 
 /***** header *****/
+.blur {
+    backdrop-filter: blur(3px);
+  }
+  
 header {
     display: flex;
     justify-content: space-between;
@@ -105,7 +110,8 @@ header .nav-login a:last-child {
 }
 
 .portfolio-slide-container {
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x: auto;
     display: flex;
     transition: 0.3s;
 
@@ -133,7 +139,7 @@ header .nav-login a:last-child {
     flex-shrink: 1
 }
 .slide-wrap {
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
   }
 .portfolio-slide-wrap .slide1 {
     background: url(./images/scroll1.jpg) no-repeat center center / cover;
@@ -214,22 +220,30 @@ header .nav-login a:last-child {
 }
 
 .video .video-bg {
+    padding: 0;
+    aspect-ratio: 16 / 9;
     position: relative;
-    width: 100%;
-    height: 100vh;
+    overflow: hidden;
+    color: #fff;
 }
 
-.video iframe {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: inherit;
-    height: inherit;
-    border: none;
-    pointer-events: none;
+.video .youtube {
+    width: 100%;
+    height: 100%; /* 높이를 100%로 설정하여 부모 요소의 크기에 맞게 설정합니다. */
+    position: absolute; /* 절대 위치 지정 */
+    top: 0; /* 부모 요소의 상단에 배치 */
+    left: 0; /* 부모 요소의 좌측에 배치 */
+    z-index: -1;
 }
 
 /***** section4(category) *****/
+.category {
+    position: relative;
+    z-index: 99;
+    background-color: #fff;
+
+    transform: translateZ(-3px);
+}
 .category .category-des {
     text-align: right;
     padding: 15rem 10rem 0;
@@ -455,6 +469,9 @@ footer {
 .footer-wrap .footer-follow ul li {
     margin: 0;
     flex-grow: 1;
+}
+.footer-wrap ul li a:hover {
+    text-decoration: underline;
 }
 
 .footer-wrap .footer-follow ul:nth-child(2) li {

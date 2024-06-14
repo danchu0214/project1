@@ -1,3 +1,9 @@
+## 240613
+1.css,js 작업<br>
+목표로 했던 ScrollTrigger, Parallax가 잘 적용되지 않아 몇시간동안 붙잡고 있었는데, html head에 script를
+넣어서 그런거였다.. body태그 마지막에 넣으니 바로 작동이 되었다. 조금 허망했지만 해결되어서 다행이다.
+그 밖에 hover나 aos를 사용해서 디테일을 추가하였다.
+
 ## 240612
 1. css, js 작업<br>
 생각보다 js가 잘 적용되지 않아 오래 붙들고 있었음. GSAP ScrollTrigger로 가로 스크롤 이벤트를, Parallax를 이용해
