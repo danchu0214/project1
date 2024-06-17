@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
-/*  font-family: "Albert Sans", sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    font-family: "Albert Sans", sans-serif;
+    font-family: 'SUIT', sans-serif;
     overflow-x: hidden; overflow-y: auto;
 }
 
